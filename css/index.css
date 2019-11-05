@@ -306,22 +306,74 @@ ul {
 	justify-content: center;
 	padding: 30px auto;
 }
+
+
 @media(max-width: 800px) {
 	.nav {
 		display: flex;
 		flex-direction: column-reverse;
-		width: 100%;
+		width: 100vh;
+		align-content: center;
 	}
 	.nav a {
 		display: flex;
 		flex-direction: column;
-		align-content: center;
-		width: 100%;
+		width: 80vh;
 		padding: 4%;
 		border: 2px solid gray;
+		text-align: center;
 	}
 	.logo {
 		display: flex;
-		width: 80%;
+		width: 80vh;
+		align-content: center;
+	}
+	.top {
+		display: flex;
+		flex-direction: column;
+		width: 100vh;
+		align-content: center;
+	}
+	#title {
+		display: flex;
+		width: 80vh;
+		flex-direction: column;
+		text-align: center;
+	}
+	h1 {
+		display: flex;
+		text-align: center;
+		width: 80vh;
+	}
+	button {
+		display: flex;
+		justify-content: center;
+		width: 20vh;
+	}
+	.headerimg { 
+		display: none;
+		margin-top: 25px;
+		margin-bottom: 35px;
+		align-content: center;
+		width: 60vh;
+	}
+	.first {
+		display: flex;
+		flex-direction: column;
+	}
+	.bottom {
+		display: flex;
+		flex-direction: column;
+	}
+	.contact {
+		display: flex;
+		flex-direction: column;
+		align-content: flex-start;
+	}
+	footer {
+		margin-top: 35px;
+		display: flex;
+		text-align: center;
+		width: 60vh;
 	}
 }
