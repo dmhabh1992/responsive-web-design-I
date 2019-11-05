@@ -309,7 +309,19 @@ ul {
 @media(max-width: 800px) {
 	.nav {
 		display: flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		width: 100%;
+	}
+	.nav a {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		width: 100%;
+		padding: 4%;
+		border: 2px solid gray;
+	}
+	.logo {
+		display: flex;
+		width: 80%;
 	}
 }
