@@ -26,7 +26,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -71,7 +70,7 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 }
 nav {
-	width: 80%;
+	width: 70%;
 	word-spacing: 70px;
 	padding: 100px 40px;
 }
@@ -81,31 +80,27 @@ nav a {
 }
 .logo {
 	display: flex; 
-    height: 600px;
-    width: 20%;
+	height: 600px;
 	padding: 100px 0px;
 }
 .top {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 	height: 600px;
 }
 .top div {
 	display: flex;
 	justify-content: flex-start;
-    flex-direction: column;
-    width: 400px;
+	flex-direction: column;
 }
 h1 {
-    Font-size: 70px;
-    width: 50%;
-    margin-left: 25%;
+	Font-size: 70px;
 }
 button {
-    background-color: white;
-    width: 45%;
-
+	background-color: white;
+	width: 80px;
+	
 }
 .headerimg {
 	display: flex;
@@ -311,13 +306,10 @@ ul {
 	justify-content: center;
 	padding: 30px auto;
 }
-@media all {
-    body {
-      background: #ccc;
-    }
-  }
-  @media all (max-width: 501px) {
-    body {
-      background: #ccc;
-    }
-  }
+@media(max-width: 800px) {
+	.nav {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}
