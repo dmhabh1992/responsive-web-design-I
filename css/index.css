@@ -358,10 +358,101 @@ ul {
 		width: 60vh;
 	}
 	.first {
+		margin: 20px auto;
+		display: flex;
+		flex-direction: column;
+		width: 100vh;
+	}
+	.middle-img {
+		display: flex;
+		width: 70vh;
+	}
+	#bottom {
+		margin: 20px auto;
+		display: flex;
+		flex-direction: column;
+		width: 100vh;
+		text-align: center;
+	}
+	.services .product .vision {
+		display: flex;
+		width: 100vh;
+		text-align: center;
+		flex-direction: column;
+	}
+	.section {
+		display: flex;
+		width: 100vh;
+	}
+	.contact {
+		display: flex;
+		flex-direction: column;
+		align-content: flex-start;
+	}
+	footer {
+		margin-top: 35px;
+		display: flex;
+		text-align: center;
+		width: 60vh;
+	}
+}
+@media(min-width: 500px) {
+	.nav {
+		display: flex;
+		flex-direction: column-reverse;
+		width: 100vh;
+		align-content: center;
+	}
+	.nav a {
+		display: flex;
+		flex-direction: column;
+		width: 80vh;
+		padding: 4%;
+		border: 2px solid gray;
+		text-align: center;
+	}
+	.logo {
+		display: flex;
+		width: 60vh;
+		justify-content: center;
+	}
+	.top {
+		display: flex;
+		flex-direction: column;
+		width: 100vh;
+		align-content: center;
+	}
+	#title {
+		display: flex;
+		width: 80vh;
+		flex-direction: column;
+		text-align: center;
+	}
+	h1 {
+		display: flex;
+		text-align: center;
+		width: 80vh;
+		padding: 25px;
+	}
+	button {
+		display: flex;
+		justify-content: center;
+		width: 20vh;
+	}
+	.headerimg { 
+		display: none;
+		margin-top: 25px;
+		margin-bottom: 45px;
+		align-content: center;
+		width: 60vh;
+	}
+	.first {
+		margin: 20px;
 		display: flex;
 		flex-direction: column;
 	}
 	.bottom {
+		margin: 20px auto;
 		display: flex;
 		flex-direction: column;
 	}
