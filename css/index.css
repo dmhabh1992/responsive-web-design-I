@@ -1,3 +1,470 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	padding: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+}
+
+/* Your code starts here! */
+.nav {
+	display: flex;
+}
+nav {
+	width: 70%;
+	word-spacing: 70px;
+	padding: 100px 40px;
+}
+nav a {
+	color: gray;
+	text-decoration: none;
+}
+.logo {
+	display: flex; 
+	height: 600px;
+	padding: 100px 0px;
+}
+.top {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 600px;
+}
+.top div {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+h1 {
+	Font-size: 70px;
+}
+button {
+	background-color: white;
+	width: 80px;
+	
+}
+.headerimg {
+	display: flex;
+	justify-content: flex-end;
+}	
+.first {
+	display: flex;
+	border-top: 1px solid black;
+	justify-content: space-between;
+	padding-left: 30px;
+}
+.features {
+	display: flex;
+	flex-direction: column;
+	width: 48%;
+	padding: 25px 50px;
+}
+.about {
+	display: flex;
+	flex-direction: column;
+	padding: 25px 50px;
+	width: 48%;
+}
+.middle-img {
+	display: block;
+	width: 80vh;
+	padding: 20px auto;
+	padding: 20px;
+}
+.bottom {
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid black;
+	padding: 20px auto;
+	padding-left: 30px;
+}
+.services {
+	display: flex;
+	flex-direction: column;
+	width: 29%;
+	padding: 2px;
+	padding-bottom: 20px;
+}
+.product {
+	display: flex;
+	flex-direction: column;
+	width: 29%;
+	padding: 2px;
+	padding-bottom: 20px;
+}
+.vision {
+	display: flex;
+	flex-direction: column;
+	width: 29%;
+	padding: 2px;
+	padding-bottom: 20px;
+}
+.contact {
+	display: flex;
+	flex-direction: column;
+	padding-left: 30px;
+}
+footer {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding: 30px auto;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.banner {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.logo {
+	display: flex; 
+	height: 250px;
+	padding: 100px 0px;
+}
+.banner-left a {
+	color: gray;
+	text-decoration: none;
+}
+.banner-left {
+	width: 70%;
+	word-spacing: 70px;
+	padding: 100px 40px;
+}
+
+.services-header-img {
+	padding-top: 2%;
+	padding-bottom: 4%;
+	padding-right: 5%;
+	padding-left: 5%;
+	width: 90%;
+}
+.above {
+	display: flex;
+	flex-direction: column;
+}
+.services {
+	display: flex;
+	padding-top: 2%;
+	padding-bottom: 4%;
+	padding-right: 5%;
+	padding-left: 5%;
+	width: 90%;
+}
+h1 {
+	font-size: 40px;
+	padding-right: 5%;
+}
+.between {
+	color: gray;
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	height: 100%;
+	width: 100%;
+	justify-content: space-evenly;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	padding: 10px;
+}
+button {
+	background-color: white;
+	width: 600px;
+}
+.design {
+	justify-content: space-around;
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	border: 2px solid black;
+}
+.UX {
+	justify-content: space-around;
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	border: 2px solid black;
+}
+.marketing {
+	justify-content: space-around;
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	border: 2px solid black;
+}
+.development {
+	justify-content: space-around;
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	border: 2px solid black;
+}
+.ios {
+	justify-content: space-around;
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	border: 2px solid black;
+}
+.android {
+	justify-content: space-around;
+	width: 600px;
+	display: flex;
+	flex-direction: row;
+	flex-flow: nowrap;
+	box-sizing: border-box;
+	border: 2px solid black;
+}
+.below {
+	display: flex;
+	justify-content: space-betweeen;
+	flex-direction: row;
+	width: 100%;
+	margin: 10px 30px;
+	margin-right: 10%;
+}
+.facts{
+	display: flex;
+	flex-direction: column;
+}
+ul {
+	list-style-position: inside;
+}
+.services-info-img {
+	display: flex;
+	height: 100%;
+	width: 50%;
+}
+.footer {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding: 30px auto;
+}
+
+
+@media(max-width: 800px) {
+	.nav {
+		display: flex;
+		flex-direction: column-reverse;
+		width: 100vh;
+		align-content: center;
+	}
+	.nav a {
+		display: flex;
+		flex-direction: column;
+		width: 80vh;
+		padding: 4%;
+		border: 2px solid gray;
+		text-align: center;
+	}
+	.logo {
+		display: flex;
+		width: 80vh;
+		align-content: center;
+	}
+	.top {
+		display: flex;
+		flex-direction: column;
+		width: 100vh;
+		align-content: center;
+	}
+	#title {
+		display: flex;
+		width: 80vh;
+		flex-direction: column;
+		text-align: center;
+	}
+	h1 {
+		display: flex;
+		text-align: center;
+		width: 80vh;
+	}
+	button {
+		display: flex;
+		justify-content: center;
+		width: 20vh;
+	}
+	.headerimg { 
+		display: none;
+		margin-top: 25px;
+		margin-bottom: 35px;
+		align-content: center;
+		width: 60vh;
+	}
+	.first {
+		margin: 20px auto;
+		display: flex;
+		flex-direction: column;
+		width: 100vh;
+	}
+	.middle-img {
+		display: flex;
+		width: 70vh;
+	}
+	#bottom {
+		margin: 20px auto;
+		display: flex;
+		flex-direction: column;
+		width: 100vh;
+		text-align: center;
+	}
+	.services .product .vision {
+		display: flex;
+		width: 100vh;
+		text-align: center;
+		flex-direction: column;
+	}
+	.section {
+		display: flex;
+		width: 100vh;
+	}
+	.contact {
+		display: flex;
+		flex-direction: column;
+		align-content: flex-start;
+	}
+	footer {
+		margin-top: 35px;
+		display: flex;
+		text-align: center;
+		width: 60vh;
+	}
+}
+@media(min-width: 500px) {
+	.nav {
+		display: flex;
+		flex-direction: column-reverse;
+		width: 100vh;
+		align-content: center;
+	}
+	.nav a {
+		display: flex;
+		flex-direction: column;
+		width: 80vh;
+		padding: 4%;
+		border: 2px solid gray;
+		text-align: center;
+	}
+	.logo {
+		display: flex;
+		width: 60vh;
+		justify-content: center;
+	}
+	.top {
+		display: flex;
+		flex-direction: column;
+		width: 100vh;
+		align-content: center;
+	}
+	#title {
+		display: flex;
+		width: 80vh;
+		flex-direction: column;
+		text-align: center;
+	}
+	h1 {
+		display: flex;
+		text-align: center;
+		width: 80vh;
+		padding: 25px;
+	}
+	button {
+		display: flex;
+		justify-content: center;
+		width: 20vh;
+	}
+	.headerimg { 
+		display: none;
+		margin-top: 25px;
+		margin-bottom: 45px;
+		align-content: center;
+		width: 60vh;
+	}
+	.first {
+		margin: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+	.bottom {
+		margin: 20px auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.contact {
+		display: flex;
+		flex-direction: column;
+		align-content: flex-start;
+	}
+	footer {
+		margin-top: 35px;
+		display: flex;
+		text-align: center;
+		width: 60vh;
+	}
+}
